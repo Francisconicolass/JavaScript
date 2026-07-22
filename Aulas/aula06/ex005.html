@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciando estudos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(89, 89, 216);
+            color: white;
+            font: normal 18 arial;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando estudos Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div><br>
+    <script>
+        /* var p1 = window.document.getElementsByTagName('p')[1]
+        window.alert(p1.innerText) */
+
+        /* var div = window.document.getElementById('msg')
+        window.document.write(div.innerHTML) */
+
+        var d = window.document.querySelector('#msg')
+        d.style.background = 'black'
+
+    </script>
 </body>
 </html>
